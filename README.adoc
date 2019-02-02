@@ -4,23 +4,27 @@
 
 This repository is suplement to the main event details on https://www.meetup.com/Flutter-Denver/events/257730773/[meetup.com].
 
-:toc-title: Contents
+:toc-title: Tuesday, February 5, 2019
 
 toc::[]
 
-= Flutter Denver Meetup - Tuesday, February 5, 2019
+= Flutter Denver Presents: 3 Speakers and a Boatload of Awesome
 
-== 3 Speakers and a Boatload of Awesome
+== Presentations
+
+* Flutter - A Boatload of Awesome
+** Eric Spery https://twitter.com/ericspery[<@ericspery>]
+
+* Flutter – A Sweet Dish, but Not all “Peaches and Cream”
+** David Baron
+
+* Focusing on Dart
+** Levi Cook https://twitter.com/levicook[<@levicook>]
 
 === Organizers
 
 * Eric Spery
-** eric@flutterdoctors.com
-** https://twitter.com/ericspery[@ericspery]
-
 * Levi Cook
-** levi@flutterdoctors.com
-** https://twitter.com/levicook[@levicook]
 
 === Host and Location
 
