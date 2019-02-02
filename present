@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+
+// todo insist on args > 0
+// todo insist on args[0]
+// todo insist adoc exists
+
+// const args = process.argv.slice(2);
+// const deck = args[0];
+// const path = require('path')
+
+// const adoc = path.join(deck, 'index.adoc')
+// const html = path.join(deck, 'index.html')
+
+const asciidoctor = require('asciidoctor.js')()
+require('asciidoctor-reveal.js')
+
+const bs = require('browser-sync').create()
+
+function build (adoc) {
+  asciidoctor.convertFile(adoc, {
+    safe: 'safe',
+    backend: 'revealjs',
+    attributes: {
+      'revealjsdir': '/node_modules/reveal.js',
+      'revealjs_theme': 'solarized',
+
+      'source-highlighter': 'highlightjs',
+      'highlightjs-theme': '/node_modules/highlight.js/styles/solarized-light.css'
+    }
+  })
+}
+
+// reload when index.html files change
+bs.watch('*/index.html').on('change', bs.reload)
+
+// build index.html when index.adoc files change
+bs.watch('*/index.adoc').on('change', build)
+
+// // prepare the html
+// build()
+
+// start the server
+bs.init({
+  directory: true,
+  open: false,
+  server: true,
+  ui: false
+})

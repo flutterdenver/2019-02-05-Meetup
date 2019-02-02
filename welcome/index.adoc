@@ -1,0 +1,25 @@
+
+:revealjs_autoSlide: 15000
+:revealjs_center: false
+:revealjs_history: true
+:revealjs_loop: true
+
+== Welcome
+
+== Facilities
+
+* Bathrooms
+
+* WiFi
+** username
+** passowrd
+
+[%notitle]
+== !
+
+image::https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg[canvas,size=cover]
+
+[%notitle]
+== !
+
+image::https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg[canvas,size=contain]
