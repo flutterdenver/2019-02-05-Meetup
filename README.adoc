@@ -1,33 +1,40 @@
 
-= Flutter Denver
-== 3 Speakers and a Boatload of Awesome
-= Tuesday, February 5, 2019
-
-Eric Spery
-Hosted by
-Eric Spery and Levi Cook
-
 :toc:
 :toc-placement!:
-:toc-title:
+
+This repository is suplement to the main event details on https://www.meetup.com/Flutter-Denver/events/257730773/[meetup.com].
+
+:toc-title: Contents
 
 toc::[]
 
-Flutter Denver Meetup - February 05, 2019
+= Flutter Denver Meetup - Tuesday, February 5, 2019
 
-= 3 Speakers and a Boatload of Awesome
+== 3 Speakers and a Boatload of Awesome
 
 === Organizers
 
 * Eric Spery
 ** eric@flutterdoctors.com
-** @ericspery
+** https://twitter.com/ericspery[@ericspery]
 
 * Levi Cook
 ** levi@flutterdoctors.com
-** @levicook
+** https://twitter.com/levicook[@levicook]
 
-=== Hosts
-* Code Talent
+=== Host
 
-=== Tuesday, February 5, 2019
+* Code Talent - 
+** https://www.google.com/maps/search/?api=1&query=3412+Blake+St.%2C+Denver%2C+CO%2C+80205%2C+us[3412 Blake St. · Denver, CO]
+** http://www.code-talent.com
+** https://twitter.com/CodeTechTalent[@CodeTechTalent]
+
+=== Event Details
+
+This particular event is primarily organized here:
+https://www.meetup.com/Flutter-Denver/events/257730773/
+
+=== Meetup Details
+
+The meetup group is organized here:
+https://www.meetup.com/Flutter-Denver/
