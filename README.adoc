@@ -22,16 +22,16 @@ toc::[]
 ** levi@flutterdoctors.com
 ** https://twitter.com/levicook[@levicook]
 
-=== Host
+=== Host and Location
 
-* Code Talent - 
+* Code Talent
 ** https://www.google.com/maps/search/?api=1&query=3412+Blake+St.%2C+Denver%2C+CO%2C+80205%2C+us[3412 Blake St. · Denver, CO]
 ** http://www.code-talent.com
 ** https://twitter.com/CodeTechTalent[@CodeTechTalent]
 
 === Event Details
 
-This particular event is primarily organized here:
+This particular event is organized here:
 https://www.meetup.com/Flutter-Denver/events/257730773/
 
 === Meetup Details
