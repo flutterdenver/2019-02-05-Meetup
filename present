@@ -1,22 +1,12 @@
 #!/usr/bin/env node
 
-// todo insist on args > 0
-// todo insist on args[0]
-// todo insist adoc exists
-
-// const args = process.argv.slice(2);
-// const deck = args[0];
-// const path = require('path')
-
-// const adoc = path.join(deck, 'index.adoc')
-// const html = path.join(deck, 'index.html')
-
 const asciidoctor = require('asciidoctor.js')()
 require('asciidoctor-reveal.js')
 
 const bs = require('browser-sync').create()
 
 function build (adoc) {
+  console.log('[present] building', adoc.replace('.adoc', '.html'), 'from', adoc)
   asciidoctor.convertFile(adoc, {
     safe: 'safe',
     backend: 'revealjs',
@@ -30,18 +20,22 @@ function build (adoc) {
   })
 }
 
+const glob = require('glob')
+glob('*/index.adoc', function (err, files) {
+  if (err) throw err
+  files.forEach(build)
+})
+
 // reload when index.html files change
 bs.watch('*/index.html').on('change', bs.reload)
 
 // build index.html when index.adoc files change
 bs.watch('*/index.adoc').on('change', build)
 
-// // prepare the html
-// build()
-
 // start the server
 bs.init({
   directory: true,
+  notify: false,
   open: false,
   server: true,
   ui: false
