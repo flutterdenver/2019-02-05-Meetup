@@ -2,47 +2,182 @@
 :revealjs_history: true
 :revealjs_center: false
 
+
 = Focusing on Dart
 
-== Why?
+Flutter Denver Meetup::
+February 5, 2019
 
-* Foo
-* Bar
-* World
+Levi Cook::
+https://twitter.com/levicook +
+https://github.com/levicook
 
-== What?
 
-Hello World - Good Bye Cruel World
+[#why]
+== Why focus on the language?
 
-[NOTE.speaker]
---
-Actually things aren't that bad
---
-
-== Slide Five
-
-This slide uses highlighted code
-
-[source, python]
-----
-print "Hello, World!"
-----
-
-[source, dart]
-----
-print("Hello, World!");
-----
-
-== Slide Six
-
-Top slide
+- Create and maintain *confidence*
+- Avoid *FUD* +
+  **F**ear +
+  **U**ncertainty and +
+  **D**oubt
 
 [NOTE.speaker]
 --
-* tell anecdote
-* make a point
+::
+programming is a complex activity +
+easy to get turned around +
 --
 
-=== Slide Six.One
 
-This is a vertical subslide
+[#confidence]
+=== Sources of confidence
+
+* Where does _false_ confidence come from?
+* Where does _real_ confidence come from?
+
+
+[#false-confidence]
+=== Sources of _false confidence_
+
+* "Looks easy"
+* Assumed Familiarity
+
+
+[#real-confidence]
+=== Sources of _real confidence_
+
+* Durable feedback loops from
+** Your compiler
+** Example programs
+** Automated tests
+
+* Fleeting feedback loops from
+** Emulators and Devices
+** Stateful Live Reload
+
+[NOTE.speaker]
+--
+Flutter makes it look easy
+--
+
+
+[#fud]
+=== Sources of FUD
+
+* Over Confidence
+** Skipping example programs
+** Skipping automated tests
+** Dart isn't Java/Javascript/etc
+
+* Leaky Abstractions
+** Android and iOS didn't go away
+
+
+[#what]
+== What do we need to understand?
+
+* Programs
+* Variables
+* Objects
+* Functions
+* Types
+
+
+[#programs]
+== Programs
+
+
+[#programs-a]
+=== Programs ...
+
+
+[#programs-b]
+=== Programs ...
+
+
+[#variables]
+== Variables
+
+
+[#variables-a]
+=== Variables ...
+blah, blah, blah
+
+
+[#variables-b]
+=== Variables ...
+blah, blah, blah
+
+
+[#objects]
+== Objects
+
+
+[#functions]
+== Functions
+
+
+[#types]
+== Types
+
+* Short for data types
+* Seven "special" types
+** Five "everyday" types
+** Two "rainy day" types
+
+[#seven-types]
+=== Special?
+
+* Language provides a *Dedicated Syntax*
+* Represent the most essential or common objects our programs are built with
+
+[#everyday-types]
+=== Everyday?
+
+[#everyday-numbers]
+=== Everyday: numbers
+
+`1`
+
+`1.0`
+
+[#everyday-strings]
+=== Everyday: strings
+
+`"New phone"`
+
+`"Who 'dis?"`
+
+[#everyday-booleans]
+=== Everyday: booleans
+
+`true`
+
+`false`
+
+[#everyday-lists]
+=== Everyday: lists
+
+lists (also known as arrays)
+
+`[1, 2]`
+
+`["potato", "tomato"]`
+
+[#everyday-maps]
+=== Everyday: maps
+
+[#rainy-day-types]
+=== Rainy day?
+
+[%step]
+* *runes*
+[%step]
+** represent individual characters in a string
+
+* *symbols*
+[%step]
+** represent operators or identifiers
+** important for minifiers, but
+** you might not ever use them
