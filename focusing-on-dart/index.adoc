@@ -1,7 +1,7 @@
 
 :revealjs_history: true
 :revealjs_center: false
-
+:highlightjs-theme: ../node_modules/highlight.js/styles/railscasts.css
 
 = Focusing on Dart
 
@@ -16,8 +16,9 @@ https://github.com/levicook
 [#why]
 == Why focus on the language?
 
-- Create and maintain *confidence*
-- Avoid *FUD* +
+* To promote *confidence*
+* To avoid *FUD* +
+  ::
   **F**ear +
   **U**ncertainty and +
   **D**oubt
@@ -31,41 +32,50 @@ easy to get turned around +
 
 
 [#confidence]
-=== Sources of confidence
+=== Confidence
 
-* Where does _false_ confidence come from?
-* Where does _real_ confidence come from?
+* Why is confidence important?
+** Programming is complex
+** Managing high hopes and expectations
+
+* How do we regulate confidence?
+** Where does _false confidence_ come from?
+** Where does _real confidence_ come from?
 
 
 [#false-confidence]
-=== Sources of _false confidence_
+=== false confidence
 
-* "Looks easy"
+Where does _false confidence_ from from?
+
+* "That looks easy"
 * Assumed Familiarity
 
 
 [#real-confidence]
-=== Sources of _real confidence_
+=== real confidence
 
-* Durable feedback loops from
+Where does _real confidence_ from from?
+
+* Durable feedback loops
 ** Your compiler
-** Example programs
+** Example programs (and apps)
 ** Automated tests
 
-* Fleeting feedback loops from
+
+[#real-confidence-b]
+=== real confidence (cont...)
+
+* Fleeting feedback loops
 ** Emulators and Devices
 ** Stateful Live Reload
-
-[NOTE.speaker]
---
-Flutter makes it look easy
---
 
 
 [#fud]
 === Sources of FUD
 
 * Over Confidence
+** Fleeting feedback loops
 ** Skipping example programs
 ** Skipping automated tests
 ** Dart isn't Java/Javascript/etc
@@ -77,23 +87,88 @@ Flutter makes it look easy
 [#what]
 == What do we need to understand?
 
-* Programs
-* Variables
-* Objects
-* Functions
-* Types
+// [%step]
+* Program composition with Dart
 
+* We need to know
+** what components the language provides
+** how these components work
+
+* These components define ground rules for
+** every library you'll encounter
+** every program you'll create and maintain
 
 [#programs]
-== Programs
+== Programs (Apps)
+
+* Programs are compositions
+
+* Programs are composed with
+// [%step]
+** Variables
+** Objects
+** Functions
+** Types
 
 
-[#programs-a]
-=== Programs ...
+[#hello-world]
+=== Hello, World
+
+[source, dart]
+----
+//  examples/hello_world/main.dart
+include::examples/hello_world/main.dart[lines='2..4', indent=4]
+----
 
 
-[#programs-b]
-=== Programs ...
+[#main-defined]
+=== What is `main`?
+
+* `main`
+** is a required function
+** is the entry point to your program
+** ultimately defines what your app does
+
+
+[#main-anatomy]
+=== Dissecting `main`
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='2', indent=4]
+//  ^^^^           this is the function name
+----
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='2', indent=4]
+//       ^^        these are the function arguments
+//                 (there are no arguments in this example)
+----
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='2', indent=4]
+//          ^      this brace opens the function body
+----
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='2..4', indent=4]
+//  ^               this brace closes the function body
+----
+
+
+[#calling-print]
+=== Calling `print`
+
+Calling the `print` function
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='3']
+  ^^^^^
+----
 
 
 [#variables]
@@ -145,9 +220,9 @@ blah, blah, blah
 [#everyday-strings]
 === Everyday: strings
 
-`"New phone"`
+`"Dart"`
 
-`"Who 'dis?"`
+`"Flutter"`
 
 [#everyday-booleans]
 === Everyday: booleans
@@ -171,13 +246,13 @@ lists (also known as arrays)
 [#rainy-day-types]
 === Rainy day?
 
-[%step]
+// [%step]
 * *runes*
-[%step]
+// [%step]
 ** represent individual characters in a string
 
 * *symbols*
-[%step]
+// [%step]
 ** represent operators or identifiers
 ** important for minifiers, but
 ** you might not ever use them
