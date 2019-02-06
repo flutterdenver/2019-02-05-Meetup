@@ -4,22 +4,26 @@
 :revealjs_history: true
 :revealjs_loop: true
 
-== Welcome
+== Welcome to Flutter Denver
 
-== Facilities
+Welcome to Flutter Denver
 
-* Bathrooms
+include::wifi.adoc[]
 
-* WiFi
-** username
-** passowrd
+== Welcome to Code Talent!
 
-[%notitle]
-== !
+We hope you enjoy the space and have a great event!
 
-image::https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg[canvas,size=cover]
+include::wifi.adoc[]
 
-[%notitle]
-== !
+== Bathrooms
 
-image::https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg[canvas,size=contain]
+We have 2 bathrooms (either side of the kitchenette)
+
+include::wifi.adoc[]
+
+== Wheelchair Access
+
+Is available through the back-alley entrance.
+
+include::wifi.adoc[]

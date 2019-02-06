@@ -107,27 +107,27 @@ Where does _real confidence_ from from?
 // [%step]
 ** Variables
 ** Objects
-** Functions
 ** Types
 
 
 [#hello-world]
 === Hello, World
 
+* A trivial Dart program
+* Demonstrates several language features
+
 [source, dart]
 ----
-//  examples/hello_world/main.dart
-include::examples/hello_world/main.dart[lines='2..4', indent=4]
+include::examples/hello_world/main.dart[lines='2..4', indent=8]
 ----
 
 
 [#main-defined]
-=== What is `main`?
+=== `main`
 
-* `main`
-** is a required function
-** is the entry point to your program
-** ultimately defines what your app does
+* is a required function
+* it's the entry point to your program
+* ultimately defines what your program's behavior
 
 
 [#main-anatomy]
@@ -135,104 +135,162 @@ include::examples/hello_world/main.dart[lines='2..4', indent=4]
 
 [source, dart]
 ----
-include::examples/hello_world/main.dart[lines='2', indent=4]
-//  ^^^^           this is the function name
+include::examples/hello_world/main.dart[lines='2', indent=8]
+//      ^^^^
+//      |
+//      +-- the function name
+//
 ----
 
 [source, dart]
 ----
-include::examples/hello_world/main.dart[lines='2', indent=4]
-//       ^^        these are the function arguments
-//                 (there are no arguments in this example)
+include::examples/hello_world/main.dart[lines='2', indent=8]
+//           ^^
+//           ||
+//           ++-- the function's arguments
+//                (none or zero in this example)
+//
+----
+
+[#main-anatomy-b]
+=== The `main` Function Body
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='2', indent=8]
+//              ^
+//              |
+//              +-- this brace opens the function body
+//
 ----
 
 [source, dart]
 ----
-include::examples/hello_world/main.dart[lines='2', indent=4]
-//          ^      this brace opens the function body
+include::examples/hello_world/main.dart[lines='2..4', indent=8]
+//      ^
+//      |
+//      +-- this brace closes the function body
+----
+
+[#our-main-a]
+=== `main` does one thing
+
+* It calls the `print` function with one argument
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='3', indent=8]
+//      ^^^^^
+//      |
+//      +-- the function name
+//
 ----
 
 [source, dart]
 ----
-include::examples/hello_world/main.dart[lines='2..4', indent=4]
-//  ^               this brace closes the function body
+include::examples/hello_world/main.dart[lines='3', indent=8]
+//           ^               ^
+//           |               |
+//           +---------------+-- the function call
+//
 ----
-
-
-[#calling-print]
-=== Calling `print`
-
-Calling the `print` function
 
 [source, dart]
 ----
-include::examples/hello_world/main.dart[lines='3']
-  ^^^^^
+include::examples/hello_world/main.dart[lines='3', indent=8]
+//            ^^^^^^^^^^^^^^^
+//            |
+//            +-- the argument to the function call
+//
 ----
+
+[#calling-functions]
+=== Function calls
+
+* Dart calls `main`
+* `main` calls `print`
+
+[source, dart]
+----
+include::examples/hello_world/main.dart[lines='3', indent=4]
+//        ^^^^^^^^^^^^^^^
+----
+(more on strings later)
+
+
+// [#calling-print]
+// === Calling `print`
+//
+// Calling the `print` function
+//
+// [source, dart]
+// ----
+// include::examples/hello_world/main.dart[lines='3']
+//   ^^^^^
+// ----
 
 
 [#variables]
 == Variables
 
 
-[#variables-a]
-=== Variables ...
-blah, blah, blah
-
-
-[#variables-b]
-=== Variables ...
-blah, blah, blah
+//	[#variables-a]
+//	=== Variables ...
+//	blah, blah, blah
+//
+//
+//	[#variables-b]
+//	=== Variables ...
+//	blah, blah, blah
 
 
 [#objects]
 == Objects
 
 
-[#functions]
-== Functions
-
-
 [#types]
 == Types
 
 * Short for data types
-* Seven "special" types
+* Eight "special" types
 ** Five "everyday" types
 ** Two "rainy day" types
+
 
 [#seven-types]
 === Special?
 
-* Language provides a *Dedicated Syntax*
-* Represent the most essential or common objects our programs are built with
+* *Dedicated Syntax*
+* Common programming needs
+
 
 [#everyday-types]
 === Everyday?
 
+[#everyday-booleans]
+=== booleans
+
+`true`
+
+`false`
+
+
 [#everyday-numbers]
-=== Everyday: numbers
+=== numbers
 
 `1`
 
 `1.0`
 
 [#everyday-strings]
-=== Everyday: strings
+=== strings
 
 `"Dart"`
 
 `"Flutter"`
 
-[#everyday-booleans]
-=== Everyday: booleans
-
-`true`
-
-`false`
-
 [#everyday-lists]
-=== Everyday: lists
+=== lists
 
 lists (also known as arrays)
 
@@ -240,11 +298,19 @@ lists (also known as arrays)
 
 `["potato", "tomato"]`
 
+
 [#everyday-maps]
-=== Everyday: maps
+=== maps
+
+
+[#everyday-functions]
+=== functions
+
 
 [#rainy-day-types]
-=== Rainy day?
+=== Rainy day types
+
+Rainy day?
 
 // [%step]
 * *runes*

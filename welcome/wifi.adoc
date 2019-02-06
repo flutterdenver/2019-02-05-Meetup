@@ -1,0 +1,13 @@
+
+== Pizza and Beverages
+
+There's Pizza and Beverages, please help yourself
+
+== WiFi
+
+|===
+| |         |                  |
+| |Network  |*`Padawan`*       |
+| |Password |*`welcometocode`* |
+| |         |                  |
+|===
